@@ -1,17 +1,17 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
-export class User {
+export class Milestone {
 
 	@PrimaryGeneratedColumn()
 	id: number;
 
 	@Column()
-	login: string;
+	name: string;
 
 	@Column()
-	email: string;
+	status: number;
 
-	@Column()
-	password: number;
+	@Column("date")
+	dueDate: Date;
 }

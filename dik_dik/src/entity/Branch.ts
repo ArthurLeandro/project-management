@@ -1,17 +1,18 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
-export class User {
+export class Branch {
 
 	@PrimaryGeneratedColumn()
 	id: number;
 
 	@Column()
-	login: string;
+	branchName: string;
 
 	@Column()
-	email: string;
+	status: number;
 
 	@Column()
-	password: number;
+	templatedName: number;
+
 }

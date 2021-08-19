@@ -1,17 +1,15 @@
+
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
-export class User {
+export class Label {
 
 	@PrimaryGeneratedColumn()
 	id: number;
 
 	@Column()
-	login: string;
+	name: string;
 
 	@Column()
-	email: string;
-
-	@Column()
-	password: number;
+	color: string;
 }

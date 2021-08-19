@@ -1,17 +1,17 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
-export class User {
+export class Settings {
 
 	@PrimaryGeneratedColumn()
 	id: number;
 
 	@Column()
-	login: string;
+	colorOne: string;
 
 	@Column()
-	email: string;
+	colorTwo: string;
 
 	@Column()
-	password: number;
+	gradientDegree: number;
 }
